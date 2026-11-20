@@ -1,0 +1,9 @@
+{
+  "name": "trafficvision-frontend-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix trafficvision-frontend run dev --",
+    "build": "npm --prefix trafficvision-frontend run build --",
+    "preview": "npm --prefix trafficvision-frontend run preview --"
+  }
+}

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0b1118;
+  --color-panel: #121b26;
+  --color-line: #223041;
+  --color-muted: #8a9bb0;
+  --color-signal: #f5b83d;
+  --color-low: #3ecf8e;
+  --color-high: #ef5b5b;
+}
+
+body { background: var(--color-ink); color: #e6edf5; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 2px; }
+
+@keyframes sweep { 0% { transform: translateX(-100%); } 100% { transform: translateX(260%); } }
+.animate-sweep { animation: sweep 1.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .animate-sweep { animation: none; } }

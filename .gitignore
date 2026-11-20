@@ -1,0 +1,31 @@
+# Secrets and machine-local configuration
+.env
+**/.env
+*.pem
+*.key
+
+# Python environments and caches
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+
+# Node dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+
+# Uploaded/generated media and analysis runs
+uploads/
+outputs/
+runs/
+*.avi
+*.mp4
+
+# Local databases and editor settings
+*.db
+*.sqlite
+*.sqlite3
+.vscode/
+.DS_Store
